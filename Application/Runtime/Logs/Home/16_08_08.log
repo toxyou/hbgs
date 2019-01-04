@@ -1,0 +1,40 @@
+[ 2016-08-08T18:22:48+08:00 ] ::1 /mr_navigation/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nav_high_level` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `nav_high_level` WHERE `is_display` = 1 AND `layout` = 'left' ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav_middle_level` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `high_id` = 13  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `high_id` = 15  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `high_id` = 12  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `high_id` = 18  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `high_id` = 19  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nav_middle_level` WHERE `is_recommend` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav_datalist` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `nav_datalist` WHERE `middle_id` = 17  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nav_datalist` WHERE `middle_id` = 22  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav_hot` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `nav_hot` WHERE `type` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nav_hot` WHERE `type` = 1 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nav_hot` WHERE `type` = 2 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nav_high_level` WHERE `is_display` = 1 AND `layout` = 'bottom' ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nav_datalist` WHERE `high_id` = 16 AND `is_recommend` = 1  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `middle_name` FROM `nav_middle_level` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `middle_name` FROM `nav_middle_level` WHERE `id` = 22 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
