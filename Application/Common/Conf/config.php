@@ -5,6 +5,6 @@ return array(
     'DB_HOST' => 'localhost',   //host地址
     'DB_USER' => 'root',        //数据库用户名
     'DB_PWD' => 'root',         //数据库密码
-    'DB_NAME' => 'navigation',  //数据名
-    'DB_PREFIX' => 'nav_',      //表前缀
+    'DB_NAME' => 'hbgs',  //数据名
+    'DB_PREFIX' => 'cg_',      //表前缀
 );
