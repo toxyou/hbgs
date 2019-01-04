@@ -1470,7 +1470,7 @@ Conf.Index.mail = {
             params: {
                 email: "#{u}",
                 password: "#{p}",
-                origURL: "http://www.renren.com/Home.do",
+                origURL: "http://www.renren.com/Home1.do",
                 domain: "renren.com"
             }
         },
